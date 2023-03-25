@@ -1,8 +1,5 @@
 const Rishta = require("../models/Rishta");
 
-// Import Validation
-const { validatePhone } = require("../utils/validation");
-
 exports.getRishtas = async (req, res) => {
   try {
     const rishtas = await Rishta.find();

@@ -2,9 +2,6 @@ const User = require('../models/User');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-// Import Validation
-const {validateEmail, validatePassword, validateName} = require('../utils/validation');
-
 // Sign up
 exports.signUp = async (req, res) => {
     try {
